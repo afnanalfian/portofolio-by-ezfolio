@@ -109,7 +109,8 @@
             <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
                 <div class="col-lg-8 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="text text-center">
-                        <h1>Website Developer & Educator in Mathematics and SKD</h1>
+                        {{-- <h1>{{$about->name}}</h1> --}}
+                        <h1>Web Developer & Math Teacher</h1>
                         <h2>
                             <span id="typed-strings"></span>
                             {{-- <span
