@@ -24,9 +24,9 @@ class AdminSeeder extends Seeder
             $adminService= resolve(AdminInterface::class);
 
             $result = $adminService->handleSignup([
-                'email' => 'admin@admin.com',
-                'password' => '12345',
-                'password_confirmation' => '12345',
+                'email' => 'afnan.02alf@gmail.com',
+                'password' => 'nabilacantik',
+                'password_confirmation' => 'nabilacantik',
             ]);
 
             if ($result['status'] !== CoreConstants::STATUS_CODE_SUCCESS) {
@@ -90,7 +90,7 @@ class AdminSeeder extends Seeder
                                 $dir = 'assets/common/img/logo';
                             }
                             $leave_files = array('.gitkeep');
-                            
+
                             foreach (glob("$dir/*") as $file) {
                                 if (!in_array(basename($file), $leave_files)) {
                                     unlink($file);
@@ -121,7 +121,7 @@ class AdminSeeder extends Seeder
                                 $dir = 'assets/common/img/favicon';
                             }
                             $leave_files = array('.gitkeep');
-                            
+
                             foreach (glob("$dir/*") as $file) {
                                 if (!in_array(basename($file), $leave_files)) {
                                     unlink($file);
@@ -136,7 +136,7 @@ class AdminSeeder extends Seeder
                         } catch (\Throwable $th) {
                             Log::error($th->getMessage());
                         }
-                        
+
                         $data = [
                             'setting_key' => CoreConstants::SETTING__FAVICON,
                             'setting_value' => 'assets/common/img/favicon/default.png',
