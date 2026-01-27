@@ -22,7 +22,7 @@
             {!!$portfolioConfig['script']['header']!!}
         </script>
     @endif
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:title" content="{{$portfolioConfig['seo']['title']}}"/>
@@ -63,7 +63,7 @@
             border-color: rgba({{$accentColorRGB}}, .5) !important;
             box-shadow: none;
         }
-        
+
         .border-primary {
             border-color: var(--z-accent-color) !important;
         }
@@ -109,7 +109,7 @@
             <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
                 <div class="col-lg-8 col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="text text-center">
-                        <h1>{{$about->name}}</h1>
+                        <h1>Website Developer & Educator in Mathematics and SKD</h1>
                         <h2>
                             <span id="typed-strings"></span>
                             {{-- <span
@@ -360,9 +360,9 @@
                     <h2 class="mb-4">Projects</h2>
                 </div>
             </div>
-            <div 
-                id="react-project-root" 
-                data-accentcolor="{{$accentColor}}" 
+            <div
+                id="react-project-root"
+                data-accentcolor="{{$accentColor}}"
                 data-demomode="{{$demoMode}}"
             />
             <div class="mb-5"></div>
@@ -378,7 +378,7 @@
                     <h2 class="mb-4">Contact Me</h2>
                 </div>
             </div>
-    
+
             <div class="row no-gutters block-9">
                 <div class="col-md-6 order-md-last d-flex">
                     <form action="#" method="POST" id="contact-me-form" class="bg-light p-4 p-md-5 contact-form" >
@@ -482,7 +482,7 @@
                     $(this).remove();
                 });
             }
-            
+
             if ($('#typed-strings').length) {
                 @if($about->taglines)
                     var typedStrings = new Typed('#typed-strings', {
@@ -555,7 +555,7 @@
                     });
                 }
             });
-            
+
             function showNotification(message = 'Something went wrong', type = 'error', sticky = false) {
                 iziToast.show({
                     title: '',
@@ -570,7 +570,7 @@
                     messageColor: type === 'success' ? '#00ffb8' : '#ffafb4',
                     icon: type === 'success' ? 'fas fa-check' : 'fas fa-times-circle'
                 });
-            }    
+            }
         });
     </script>
     @if (!empty($portfolioConfig['script']['footer']) && $portfolioConfig['script']['footer'] != '')
